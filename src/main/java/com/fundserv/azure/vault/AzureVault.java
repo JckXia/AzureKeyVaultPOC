@@ -10,9 +10,10 @@ import com.azure.security.keyvault.secrets.models.KeyVaultSecret;
 
 
 public class AzureVault {
-    
+
     public static void main(String[] args) {
-        String keyVaultName = System.getenv("KEY_VAULT_NAME");
+       //  String keyVaultName = System.getenv("KEY_VAULT_NAME");
+        String keyVaultName = "AzureSecKeyTest";
         String keyVaultUri = "https://" + keyVaultName + ".vault.azure.net";
         System.out.println(keyVaultUri);
 
